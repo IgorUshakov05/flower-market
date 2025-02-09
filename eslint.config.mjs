@@ -1,14 +1,7 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import eslintPlugin from "@eslint/js"; // Основной пакет для Next.js
+import prettier from "eslint-config-prettier"; // Интеграция с Prettier
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
-
-export default eslintConfig;
+export default [
+  eslintPlugin.nextcore, // Конфигурация Next.js
+  prettier, // Отключение конфликтующих правил для Prettier
+];

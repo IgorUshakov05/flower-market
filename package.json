@@ -20,10 +20,15 @@
     "react-id-swiper": "^4.0.0",
     "swiper": "^11.2.2"
   },
+  "eslintConfig": {
+    "overrides": []
+  },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "@eslint/eslintrc": "^3.2.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "gh-pages": "^6.3.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
