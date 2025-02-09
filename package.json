@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build-and-export",
-    "deploy": "gh-pages -d out",
-    "build-and-export": "npm run build && npm export",
-    "lint": "next lint"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "lucide-react": "^0.475.0",
