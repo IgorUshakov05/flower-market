@@ -11,7 +11,6 @@ export default function getNextHoliday() {
     .filter((holiday) => holiday.date >= todayDate) // Фильтруем те праздники, которые еще не прошли в этом году
     .sort((a, b) => a.date.localeCompare(b.date)); // Сортируем по дате
 
-  // Если все праздники прошли в текущем году, нужно обновить даты для следующего года
   if (upcomingHolidays.length === 0) {
     const nextYear = today.getFullYear() + 1;
     upcomingHolidays = holidays.map((holiday) => {

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-
+import { FaVk, FaTelegram, FaViber, FaPhone, FaWhatsapp } from "react-icons/fa";
 export default function Footer() {
   return (
     <div>
@@ -15,7 +15,7 @@ export default function Footer() {
           <Link className="hover:text-gray-900" href="/">
             О нас
           </Link>
-          <a className="hover:text-gray-900" href="#">
+          <a className="hover:text-gray-900" href="/contact">
             Контакты
           </a>
         </nav>
@@ -26,51 +26,35 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://vk.com/images/icons/favicons/fav_logo.ico?8"
-              alt="aw"
-              width="30"
-            />
+            <FaVk size={30} />
           </Link>
           <Link
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"
-              alt="aw"
-            />
+            <FaTelegram size={30} />
           </Link>
           <Link
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://img.icons8.com/fluent/30/000000/instagram-new.png"
-              alt="aw"
-            />
+            <FaPhone size={30} />
           </Link>
           <Link
             href="https://messenger.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png"
-              alt="aw"
-            />
+            <FaViber size={30} />
           </Link>
           <Link
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://img.icons8.com/fluent/30/000000/twitter.png"
-              alt="aw"
-            />
+            <FaWhatsapp size={30} />
           </Link>
         </div>
         <p className="text-center text-gray-700 font-medium">

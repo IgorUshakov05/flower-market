@@ -12,7 +12,7 @@ export default function Navbar() {
         {/* Навигация */}
         <div className="flex gap-x-12">
           <a
-            href="#buy"
+            href="/#buy"
             className="text-sm font-medium text-gray-900 hover:text-gray-600 max-sm:hidden"
           >
             Купить
@@ -24,10 +24,10 @@ export default function Navbar() {
             Каталог
           </Link>
           <a
-            href="#"
+            href="/#rating"
             className="text-sm font-medium text-gray-900 hover:text-gray-600 max-sm:hidden"
           >
-            О нас
+            Отзывы
           </a>
           <Link
             href={"/contact"}
