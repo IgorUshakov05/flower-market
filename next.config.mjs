@@ -1,5 +1,7 @@
 const nextConfig = {
-  output: "export", // Включает режим статической генерации
+  output: "export",
+  basePath: "/flower-market",
+  reactStrictMode: true,
 };
 
 export default nextConfig;
