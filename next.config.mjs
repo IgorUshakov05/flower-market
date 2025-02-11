@@ -1,6 +1,6 @@
 const nextConfig = {
   output: "export",
-  basePath: "/flower-market",
+  // basePath: "/flower-market",
   reactStrictMode: true,
 };
 
